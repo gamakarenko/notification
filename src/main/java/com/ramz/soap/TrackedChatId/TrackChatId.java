@@ -11,6 +11,13 @@ import java.net.http.HttpResponse;
 import java.util.List;
 
 public class TrackChatId {
+    /**
+     * Метод обращения к сервису - команде по Rest
+     * @return
+     * @throws URISyntaxException
+     * @throws InterruptedException
+     * @throws IOException
+     */
     public static String httpGetRequest() throws URISyntaxException, InterruptedException, IOException {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
@@ -28,6 +35,10 @@ public class TrackChatId {
         return responseBody;
     }
 
+    /**
+     * Метод, получающий пользователей, которые предоставили свои отчёты
+     * @return
+     */
     public List<String> getTrackedList()  {
         String responseBody;
         try {

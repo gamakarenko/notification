@@ -1,10 +1,10 @@
 
 package com.ramz.soap.SOAP;
 
-
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlType;
+
 
 /**
  * <p>Java class for user complex type.
